@@ -14,6 +14,7 @@ Bonus:
 - possibilité de lier un mp3 à l'épisode et d'avoir un bouton play
 
 ## Résultat
+![image](https://user-images.githubusercontent.com/69279025/214444910-9bc6b7d0-4256-4f75-a7b3-8e3f0a361fc6.png)
 
 Total temps de travail : environ 6h étalées sur 2 jours
 Stack : HTML, CSS, JS

@@ -1,0 +1,215 @@
+:root {
+  --light-blue: #00aeff;
+  --white: white;
+  --grey: grey;
+  --red: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--light-blue);
+  color: var(--white);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#search_bar_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new_podcast_form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#input_podcast_name,
+.input_episode_title,
+.input_episode_description,
+.input_episode_date {
+  flex: 1 1 0%;
+  background-color: var(--white);
+  color: var(--light-blue);
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+#input_podcast_name::placeholder,
+.input_episode_title::placeholder,
+.input_episode_description::placeholder {
+  color: var(--light-blue);
+}
+
+#input_podcast_image,
+#search_episode_input {
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--light-blue);
+  border-radius: 0 1rem 1rem 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+#input_podcast_image::placeholder,
+#search_episode_input::placeholder {
+  color: var(--light-blue);
+}
+
+#search_episode_input {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#new_podcast_submit {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#new_podcast_submit:hover {
+  color: var(--light-blue);
+  background-color: var(--white);
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.podcast_list {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.podcast_list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#podcasts .podcast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#podcasts .podcast .content {
+  flex: 1 1 0%;
+  display: flex;
+}
+#podcasts .podcast .content .text {
+  color: var(--light-blue);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+}
+#podcasts .podcast .content img {
+  width: 15%;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+#podcasts .podcast .content .text:not(:read-only) {
+  color: var(--grey);
+}
+
+#podcasts .podcast .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.podcast .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.podcast .actions .edit {
+  color: var(--light-blue);
+}
+
+.podcast .actions .delete {
+  color: var(--red);
+}
+
+.new_episode_form {
+  margin-top: 1rem;
+  display: inherit;
+}
+
+.input_episode_title,
+.input_episode_description,
+.input_episode_date {
+  border: 1px solid var(--light-blue);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.input_episode_description {
+  border-radius: 0;
+}
+
+.input_episode_date {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.new_episode_submit {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--white);
+  background-color: var(--light-blue);
+  border-radius: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.new_episode_submit:hover {
+  color: var(--light-blue);
+  background-color: var(--white);
+}
+
+.episode_list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+  color: var(--light-blue);
+}

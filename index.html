@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Audiomeans Test technique Arad</title>
+  </head>
+  <body>
+    <header>
+      <h1>Audiomeans - Bibliothèque de podcasts</h1>
+      <form id="new_podcast_form">
+        <input
+          type="text"
+          id="input_podcast_name"
+          placeholder="Entrez le nom du podcast"
+        />
+        <input
+          type="url"
+          id="input_podcast_image"
+          placeholder="URL de l'image du podcast"
+        />
+
+        <input
+          type="submit"
+          id="new_podcast_submit"
+          value="Ajouter un podcast"
+        />
+      </form>
+    </header>
+
+    <main>
+      <section class="podcast_list">
+        <div id="search_bar_section">
+            <h2>Podcasts</h2>
+            <input type="text" id="search_episode_input" onkeyup="searchEpisode()" placeholder="Chercher un épisode" />
+        </div>
+        <div id="podcasts">
+
+        <!-- Toute la partie suivante en commentaire a servi à créer un élément tampon de la liste
+        pour la designer correctement avec du CSS, avant de le générer entièrement en JS -->
+
+          <!-- <div class="podcast">
+            <div class="content">
+              <img
+                src="https://www.atout-france.fr/sites/default/files/fiche_action/2022/06/neon-podcast-logo.jpg"
+                alt=""
+              />
+              <input
+                type="text"
+                class="text"
+                value="Mon nouveau podcast"
+                readonly
+              />
+            </div>
+            <div class="actions">
+              <button class="edit">Modifier</button>
+              <button class="delete">Supprimer</button>
+            </div>
+
+            <form class="new_episode_form">
+              <input
+                type="text"
+                class="input_episode_title"
+                placeholder="Titre de l'épisode"
+              />
+              <input
+                type="text"
+                class="input_episode_description"
+                placeholder="Description"
+              />
+              <input type="date" class="input_episode_date" min="2023-01-24" />
+              <input
+                type="submit"
+                class="new_episode_submit"
+                value="Ajouter un épisode"
+              />
+            </form>
+            <div class="episode_list">
+              <p>#1 La chambre des secrets</p>
+              <p>On va parler d'Harry Potter</p>
+              <p>24/01/2023</p>
+            </div> -->
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="search_bar.js"></script>
+  </body>
+</html>

@@ -44,3 +44,6 @@ Il cache toutes les informations ne correspondant pas à la recherche.
 Les résultats de la recherche s'affichent en temps réel.
 
 L'affichage des résultats peut être amélioré, car actuellement, si on cherche un titre d'un épisode, on verra le titre, mais toutes les autres infos sur l'épisode (la description et la date) seront cachées, ce qui n'est pas pratique, et pas esthétique non plus.
+
+![image](https://user-images.githubusercontent.com/69279025/214446140-d8e187c5-8db9-4658-a487-c94d98541c1f.png)
+
